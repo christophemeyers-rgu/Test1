@@ -21,9 +21,9 @@
             <tr>
                 <td><label for="dateofbirth">Date of birth:</label> </td>
                 <td>
-                    <input type="text" placeholder="DD" maxlength="2" size="1" required>
-                    <input type="text" placeholder="MM" maxlength="2" size="1" required>
-                    <input type="text" placeholder="YYYY" maxlength="4" size="4" required>
+                    <input type="text" name="dateofbirth" placeholder="DD" maxlength="2" size="1" required>
+                    <input type="text" name="dateofbirth" placeholder="MM" maxlength="2" size="1" required>
+                    <input type="text" name="dateofbirth" placeholder="YYYY" maxlength="4" size="4" required>
                 </td>
             </tr>
             <tr>
@@ -40,6 +40,18 @@
                         <option value="southamerica">South America</option>
                     </select>
                 </td>
+            </tr>
+            <tr>
+                <td><label for="fruit">Preferred fruit</label></td>
+                <td>
+                    <input type="radio" name="fruit" value="Lemon" required>Lemon<br>
+                    <input type="radio" name="fruit" value="Lime" >Lime<br>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Submit"> </td>
             </tr>
         </table>
 
