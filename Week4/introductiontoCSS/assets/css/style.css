@@ -1,10 +1,8 @@
-header{background: #B77D3A  }
+header{background: #B77D3A  ; text-align: center}
 
 h1{color: #87163A}
 
 a{color: #C9385D}
 
-a:hover{
-    font-family: fantasy;
+a:hover{  font-family: fantasy;  }
 
-}
