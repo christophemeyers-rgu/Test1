@@ -2,7 +2,10 @@
 *{background: #eeebea; font-family: 'Lato', sans-serif; color: #222E32
 }
 
-header{background: #A5CFCC  ; text-align: center}
+header{
+    background-color: #A5CFCC;
+
+}
 
 h1{color: #00736D}
 
@@ -10,5 +13,7 @@ a{color: #A5CFCC}
 
 a:hover{color: #ee393b  }
 
+img{width: 100px;}
 
-#mugContainer{width: 50px}
+#mugContainer{width: 100px}
+
