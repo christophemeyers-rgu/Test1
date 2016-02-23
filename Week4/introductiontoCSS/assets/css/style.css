@@ -5,6 +5,19 @@
     color: #222E32
 }
 
+header{
+    background-color: #A5CFCC;
+    height: 150px;
+    width: 500px;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+h1{
+    color: #00736D;
+    font-size: 50px;
+}
+
 ul{
     list-style-type: none;
     margin: 0;
@@ -22,25 +35,16 @@ li a{
     text-decoration: none;
 }
 
-header{
-    background-color: #A5CFCC;
-    height: 150px;
-    width: 500px;
-    padding-left: 30px;
-    padding-top: 10px;
-}
-
-h1{
-    color: #00736D;
-    font-size: 30px;
-    text-align: center;
-}
-
-a{
-    /*color: #A5CFCC*/}
-
 a:hover{
     color: #ee393b  }
+
+
+h2 > p{float: left}
+
+
+
+
+
 
 img{
     width: 50%;
