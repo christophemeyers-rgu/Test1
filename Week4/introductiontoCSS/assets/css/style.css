@@ -1,5 +1,13 @@
 
-*{background: #eeebea; font-family: 'Lato', sans-serif; color: #222E32
+*{
+    background: #eeebea;
+    font-family: 'Lato', sans-serif;
+    color: #222E32
+}
+
+ul{
+    list-style-type: none;
+
 }
 
 header{
@@ -7,13 +15,18 @@ header{
 
 }
 
-h1{color: #00736D}
+h1{
+    color: #00736D}
 
-a{color: #A5CFCC}
+a{
+    color: #A5CFCC}
 
-a:hover{color: #ee393b  }
+a:hover{
+    color: #ee393b  }
 
-img{width: 100px;}
+img{
+    width: 100px;}
 
-#mugContainer{width: 100px}
+#mugContainer{
+    width: 100px}
 
