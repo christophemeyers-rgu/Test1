@@ -25,7 +25,9 @@ a{
 a:hover{
     color: #ee393b  }
 
-
+img{
+    width: 30%;
+}
 
 #mugContainer{
     width: 30%}
