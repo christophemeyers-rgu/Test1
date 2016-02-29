@@ -7,6 +7,10 @@ body{
 }
 
 
-.main{
+main{
     background-color: #eeebea;
+}
+
+.container{
+    background-color: #ee393b;
 }
