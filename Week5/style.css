@@ -1,7 +1,12 @@
 body{
-    background: #00736D;
+    background-color: #00736D;
 }
 
-.container{
+*{
+    color: #222E32;
+}
+
+
+.main{
     background-color: #eeebea;
 }
