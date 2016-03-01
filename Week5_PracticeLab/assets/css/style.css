@@ -2,6 +2,28 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+
+header{
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    float: left;
+    display: inline-block;
+    text-align: center;
+    padding: 0 10px 10px 10px;
+}
+
+
 main{
     max-width: 960px;
     margin-right: auto;
@@ -16,6 +38,8 @@ main{
     color: white;
 
 }
+
+
 
 #LightSidebar{
     background-color: #DBC9DF;
