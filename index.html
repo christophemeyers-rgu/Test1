@@ -1,13 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
 <head>
+    <title>TODO supply a title</title>
     <meta charset="UTF-8">
-    <title> My first page </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        var keylist = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+
+        function randompassword(){
+            temp = "";
+            for(i=0; i<15; i++){
+                if(i % 4 === 3 && i !=0){
+                    temp += "-";
+                }
+                else{
+                    temp += keylist.charAt(Math.floor(Math.random()*keylist.length));
+                }
+            }
+            return temp;
+        }
+        function output(){
+            document.getElementById("demo").innerHTML = randompassword();
+        }
+
+
+    </script>
 </head>
 <body>
-<h1>This is my header</h1>
-<p>There is also some text</p>
-<p>Whoo, this all works!</p>
 
+
+<div>
+
+    <p>Create a random password</p>
+    <button type="button" onclick="output()">Try it</button>
+    <p id="demo"></p>
+
+</div>
 </body>
 </html>
