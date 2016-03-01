@@ -34,17 +34,37 @@ main{
 }
 
 
+#MainSection{
+    float: left;
+}
+
 #Sidebar{
     color: white;
 
 }
 
-
-
 #LightSidebar{
     background-color: #DBC9DF;
+    max-width: 320px;
+    height: 300px;
+    padding: 10px 15px 30px 10px;
+
 }
 
 #DarkSidebar{
     background-color: #782A7E;
+    max-width: 320px;
+    height: 300px;
+    padding: 10px 15px 30px 10px;
+}
+
+
+footer{
+    max-width: 960px;
+    height: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #363636;
+    color: white;
+    text-align: center;
 }
