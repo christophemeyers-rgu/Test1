@@ -1,3 +1,26 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+
+main{
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row-reverse;
+}
+
+
+#Sidebar{
+    color: white;
+
+}
+
+#LightSidebar{
+    background-color: #DBC9DF;
+}
+
+#DarkSidebar{
+    background-color: #782A7E;
+}
