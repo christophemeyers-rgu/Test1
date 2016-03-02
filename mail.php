@@ -8,6 +8,7 @@
 
 
 $name = $_POST["name"];
+$email = $_POST["email"];
 
 
 $to = "christophe.meyers@icloud.com";
@@ -17,4 +18,7 @@ $headers = "From: christophe.meyers.312@gmail.com" . "\r\n" .
     "CC: somebodyelse@example.com";
 
 mail($to,$subject,$txt,$headers);
+
+echo $name;
 ?>
+
