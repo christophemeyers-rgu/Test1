@@ -23,7 +23,7 @@ $txt = "Dear $name,
         An account has been set up in your name.
         <br>
         If you would like to fill out a survey concerning your experience with Befriend A Child,
-        please follow the link to http://www.google.com and login with:
+        please follow the link to http://befriendachildtestsurvey.azurewebsites.net/volunteerlogin.html and login with:
         <br><br>
         Username: $email
         <br>
