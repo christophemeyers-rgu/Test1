@@ -9,7 +9,6 @@ and open the template in the editor.
     <title>Test form to email</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
     <script>
         var keylist = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
@@ -29,14 +28,10 @@ and open the template in the editor.
 
 
         function output(){
-            //document.getElementById("pass").value = randompassword();
-            $("#pass").value(randompassword());
+            document.getElementById("pass").value = randompassword();
+
 
         }
-
-        $(
-            output()
-        )
 
 
     </script>
@@ -47,7 +42,7 @@ and open the template in the editor.
     <form action="mail.php" method="post">
         <input type="text" placeholder="Full Name" name="name"><br>
         <input type="email" placeholder="Email" name="email"><br>
-        <label for="pass"></label><input type="password" placeholder="Password" name="password" id="pass"><button type="button" id="createpass">Create Password</button><br>
+        <label for="pass"></label><input type="password" placeholder="Password" name="password" id="pass"><button type="button" onclick="output()">Create Password</button><br>
 
         <input type="submit" value="submit">
 
