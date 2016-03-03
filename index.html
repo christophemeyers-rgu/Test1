@@ -28,7 +28,7 @@ and open the template in the editor.
 
 
         function output(){
-            document.getElementById("pass").innerHTML = randompassword();
+            document.getElementById("pass").value = randompassword();
 
 
         }
@@ -42,14 +42,14 @@ and open the template in the editor.
     <form action="mail.php" method="post">
         <input type="text" placeholder="Full Name" name="name"><br>
         <input type="email" placeholder="Email" name="email"><br>
-        <label for="pass"></label><input type="text" name="password" id="pass"><br>
+        <label for="pass"></label><input type="text" name="password" id="pass"><button type="button" onclick="output()">Create Password</button><br>
 
         <input type="submit" value="submit">
 
     </form>
 
         <p>Create a random password</p>
-        <button type="button" onclick="output()">Try it</button>
+
         <p id="demo"></p>
 
 
