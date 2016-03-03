@@ -6,13 +6,17 @@
  * Time: 20:52
  */
 
+ini_set("SMTP", "smtp.gmail.com");
+ini_set("sendmail_from", "christophe.meyers.312@gmail.com");
+
+
 //setting some variables with form values
 $name = $_POST["name"];
 $password = $_POST["password"];
 $email = $_POST["email"];
 
 //email receiver
-$to = $_POST["email"];
+
 
 //email subject
 $subject = "Befriend A Child - Survey Login";
@@ -42,7 +46,7 @@ $headers = "From: christophe.meyers.312@gmail.com" . "\r\n" .
     "CC: somebodyelse@example.com";
 
 //function to send email to (receiver, subject, content)
-mail($to,$subject,$txt);
+mail($email,$subject,$txt);
 
 //print email content to display whether the content is as expected
 echo $txt;
