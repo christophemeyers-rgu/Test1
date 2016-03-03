@@ -8,16 +8,15 @@
 
 
 $name = $_POST["name"];
-$email = $_POST["email"];
 
 
-$to = "christophe.meyers@icloud.com";
+$to = $_POST["email"];
 $subject = "Befriend A Child - Survey Login";
 $txt = "Hi $name!";
 $headers = "From: christophe.meyers.312@gmail.com" . "\r\n" .
     "CC: somebodyelse@example.com";
 
-mail($to,$subject,$txt,$headers);
+echo mail($to,$subject,$txt,$headers);
 
 echo $name;
 ?>
