@@ -8,7 +8,7 @@
 
 
 $name = $_POST["name"];
-
+$password = $_POST["password"];
 
 $to = $_POST["email"];
 $subject = "Befriend A Child - Survey Login";
@@ -18,6 +18,6 @@ $headers = "From: christophe.meyers.312@gmail.com" . "\r\n" .
 
 echo mail($to,$subject,$txt,$headers);
 
-echo $name;
+echo $password;
 ?>
 
