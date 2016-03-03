@@ -14,20 +14,20 @@ $email = $_POST["email"];
 $to = $_POST["email"];
 $subject = "Befriend A Child - Survey Login";
 $txt = "Dear $name,
-        \n\n
+        <br><br>
         An account has been set up in your name.
-        \n
+        <br>
         If you would like to fill out a survey concerning your experience with Befriend A Child,
-        \nplease follow the link to http://www.google.com and login with:
-        \n\n
+        please follow the link to http://www.google.com and login with:
+        <br><br>
         Username: $email
-        \n
+        <br>
         Password: $password
-        \n\n
+        <br><br>
         You will be able to change your password once logged in.
-        \n\n
+        <br><br>
         King Regards,
-        \n\n
+        <br><br>
         The Befriend A Child Team";
 
 $headers = "From: christophe.meyers.312@gmail.com" . "\r\n" .
