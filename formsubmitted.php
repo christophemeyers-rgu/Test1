@@ -28,7 +28,7 @@
 
     //email content
     $txt = "Dear $name,
-            \n\n
+            <br><br>
             An account has been set up in your name.
             <br>
             If you would like to fill out a survey concerning your experience with Befriend A Child,
@@ -59,7 +59,7 @@
     $message = Swift_Message::newInstance('Befriend A Child Test Mail')
         ->setFrom(array('christophe.meyers.312@gmail.com' => 'Christophe Meyers'))
         ->setTo(array($email => $name))
-        ->setBody($txt);
+        ->setBody($txt, "text/html");
 
     $result = $mailer->send($message);
 
