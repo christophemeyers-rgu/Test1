@@ -63,14 +63,15 @@
 
     $result = $mailer->send($message);
 
-    if($mailer->send($message) == 1){
+
+    /*if($mailer->send($message) == 1){
         echo 'send ok';
     }
     else {
         echo 'send error';
     }
 
-    echo function_exists('proc_open') ? "Yep, that will work" : "Sorry, that won't work";
+    echo function_exists('proc_open') ? "Yep, that will work" : "Sorry, that won't work";*/
 
     ?>
 
