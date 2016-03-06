@@ -57,7 +57,7 @@ $message = Swift_Message::newInstance('Befriend A Child Test Mail')
 $result = $mailer->send($message);
 
 
-
+echo function_exists('proc_open') ? "Yep, that will work" : "Sorry, that won't work";
 //email receiver
 
 
