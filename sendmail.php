@@ -56,7 +56,7 @@ $message = Swift_Message::newInstance('Befriend A Child Test Mail')
 
 $result = $mailer->send($message);
 
-if($mMailer->send($mEmail) == 1){
+if($mailer->send($message) == 1){
     echo 'send ok';
 }
 else {
