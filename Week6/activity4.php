@@ -17,10 +17,9 @@
     $provisionedActivities[1] = "Hugs";
     unset($provisionedActivities[2]);
 
-    print $provisionedActivities[0];
-    print $provisionedActivities[1];
-    print $provisionedActivities[2];
-
+    foreach($provisionedActivities as $x){
+        print "<p>$x</p>";
+    }
     ?>
 
 </body>
