@@ -5,11 +5,21 @@
     <title>Title</title>
 </head>
 <body>
-    <?php
 
-        for($i = 1; $i<30; $i++){
-            print "<p>On the $i";
-            switch($i){
+    <?php
+        $items = array("specs", "mugs", "sausage rolls");
+
+        $supply = array(7, 7, 7);
+
+        $day = 1;
+
+        while($supply[0]!=0 && $supply[1]!=0 && $supply[2]!=0){
+
+            $todaysGood = rand(0,2);
+            $supply[$todaysGood] -= 1;
+
+            print "<p>On the $day";
+            switch($day){
                 case 1:
                     print "st";
                     break;
@@ -31,28 +41,14 @@
                 default:
                     print "th";
             }
-            print " of the month ";
-
-            if($i%2==0){
-                print "specs ";
-                if($i%3==0){
-                    print " and mugs ";
-                }
-                if($i%4==0){
-                    print " and sausage rolls ";
-                }
-            }
-            elseif($i%3==0){
-                print "mugs ";
-            }
-            else{
-                print "no products ";
-            }
-
-            print "are available.</p>";
+            print " of the month $items[$todaysGood] are available.</p>";
         }
+        print "<p> No more goods are available this month.</p>";
+
 
 
     ?>
+
+
 </body>
 </html>
