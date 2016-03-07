@@ -19,7 +19,7 @@
 
     <?php
 
-    $wantedgood = $_POST["wantedgood"];
+    $wantedgood = "specs";
 
     switch($wantedgood){
         case "specs":
