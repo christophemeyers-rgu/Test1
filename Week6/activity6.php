@@ -13,7 +13,7 @@
 
         $day = 1;
 
-        while($supply[0]!=0 && $supply[1]!=0 && $supply[2]!=0){
+        while($supply[0]!=0 && $supply[1]!=0 && $supply[2]!=0 && $day<31){
 
             $todaysGood = rand(0,2);
             $supply[$todaysGood] -= 1;
@@ -42,6 +42,8 @@
                     print "th";
             }
             print " of the month $items[$todaysGood] are available.</p>";
+
+            $day += 1;
         }
         print "<p> No more goods are available this month.</p>";
 
