@@ -8,7 +8,7 @@
     <?php
         $items = array("specs", "mugs", "sausage rolls");
 
-        for($i = 0; $i<30; $i++){
+        for($i = 1; $i<30; $i++){
             print "<p>On the $i";
             switch($i){
                 case 1:
@@ -39,6 +39,9 @@
             }
             elseif($i%3==0){
                 print "mugs ";
+            }
+            else{
+                print "no products ";
             }
 
             print "are available.</p>";
