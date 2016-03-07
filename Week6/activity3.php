@@ -6,7 +6,7 @@
 </head>
 <body>
 
-    <form action="activity3.html" method="post">
+    <form action="activity3.php" method="post">
 
         <select name="wantedgood">
             <option value="specs">Specs</option>
@@ -19,7 +19,7 @@
 
     <?php
 
-    $wantedgood = "specs";
+    $wantedgood = $_POST["wantedgood"];
 
     switch($wantedgood){
         case "specs":
