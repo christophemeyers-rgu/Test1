@@ -17,11 +17,17 @@
                 case 2:
                     print "nd";
                     break;
+                case 3:
+                    print "rd";
+                    break;
                 case 21:
                     print "st";
                     break;
                 case 22:
                     print "nd";
+                    break;
+                case 23:
+                    print "rd";
                     break;
                 default:
                     print "th";
