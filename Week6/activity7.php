@@ -32,7 +32,7 @@
 
     print "<p>" . strtoupper($winner);
 
-    print " has won all the specs.";
+    print " number $draw has won all the specs.";
 
 
     $draw = rand(0,count($people));
@@ -42,7 +42,7 @@
 
     print "<p>" . strtoupper($winner);
 
-    print " has won all the mugs.";
+    print " number $draw has won all the mugs.";
 
 
     $draw = rand(0,count($people));
@@ -52,7 +52,7 @@
 
     print "<p>" . strtoupper($winner);
 
-    print " has won all the sausage rolls.";
+    print " number $draw has won all the sausage rolls.";
 
 
 
