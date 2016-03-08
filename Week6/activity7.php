@@ -25,7 +25,7 @@
 
     sort($people);
 
-    $draw = rand(0,count($people));
+    $draw = rand(0,count($people)-1);
 
     $winner = strtoupper($people[$draw]);
     unset($people[$draw]);
