@@ -8,5 +8,13 @@
 
 <body>
 <h1>Hello</h1>
+
+    <p>
+        Welcome
+        <?php
+            echo $_POST["username"];
+        ?>
+        !
+    </p>
 </body>
 </html>
