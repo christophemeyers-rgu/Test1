@@ -1,6 +1,12 @@
 <?php
 
 
+
+session_start();
+$access_level = $_COOKIE['access_level_cookie'];
+
+displayAccessLevelInformation($access_level);
+
 function displayAccessLevelInformation($accessLevel){
     if($accessLevel == "standarduser"){
         echo "<p>You are currently logged in as a standard user </p>";
@@ -17,13 +23,3 @@ function displayAccessLevelInformation($accessLevel){
 
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Homepage</title>
-</head>
-<body>
-    <?php displayAccessLevelInformation($acces_level);?>
-</body>
-</html>
