@@ -24,6 +24,6 @@ function displayAccessLevelInformation($accessLevel){
     <title>Homepage</title>
 </head>
 <body>
-
+    <?php displayAccessLevelInformation($acces_level);?>
 </body>
 </html>
