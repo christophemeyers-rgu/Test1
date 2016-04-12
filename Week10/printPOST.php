@@ -9,17 +9,17 @@
     <article>
         <h1>
             <?php
-            echo $_GET["title"];
+            echo $_POST["title"];
             ?>
         </h1>
         <p>
             <?php
-            echo $_GET["text"];
+            echo $_POST["text"];
             ?>
         </p>
         <strong>
             <?php
-            echo $_GET["combo"];
+            echo $_POST["combo"];
             ?>
         </strong>
     </article>
