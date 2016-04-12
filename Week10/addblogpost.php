@@ -26,7 +26,7 @@
 <?php
 if ($_SERVER['REQUEST_METHOD']==='GET'){
 ?>
-    <form action="addblogpost.php.php" method="post">
+    <form action="addblogpost.php" method="post">
         <h2>This is a form, Mister!</h2><br>
         <input type="text" name="title" placeholder="Give your title."><br>
         <input type="text" name="text" placeholder="Please put some words here."><br>
