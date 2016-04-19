@@ -35,8 +35,8 @@ footer{
 }
 
 
-header.h3{
-    font-style: normal;
+h1,h3{
+    font-size: 200%;
 }
 
 ul{
