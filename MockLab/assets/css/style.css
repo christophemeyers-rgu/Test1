@@ -5,3 +5,8 @@ body{
 ul{
     list-style-type: none;
 }
+
+.TextWrap{
+    float: left;
+    margin: 10px 10px 10px 0;
+}
