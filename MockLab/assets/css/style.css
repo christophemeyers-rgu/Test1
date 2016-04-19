@@ -17,7 +17,15 @@ main{
     flex-direction: row;
 }
 
-
+footer{
+    max-width: 960px;
+    height: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #363636;
+    color: white;
+    text-align: center;
+}
 
 ul{
     list-style-type: none;
