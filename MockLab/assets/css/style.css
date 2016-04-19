@@ -3,14 +3,14 @@ body{
 }
 
 header{
-    max-width: 720px;
+    max-width: 650px;
     margin-right: auto;
     margin-left: auto;
     font-size: 100%;
 }
 
 main{
-    max-width: 720px;
+    max-width: 650px;
     margin-right: auto;
     margin-left: auto;
     display: flex;
@@ -19,7 +19,7 @@ main{
 }
 
 footer{
-    max-width: 720px;
+    max-width: 650px;
     margin-right: auto;
     margin-left: auto;
     text-align: left;
