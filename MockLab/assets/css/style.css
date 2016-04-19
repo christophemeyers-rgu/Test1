@@ -19,16 +19,14 @@ main{
 
 footer{
     max-width: 960px;
-    height: 100px;
     margin-right: auto;
     margin-left: auto;
-    background-color: #363636;
-    color: white;
     text-align: left;
 }
 
 #Sidebar{
     max-width: 150px;
+    text-align: left;
 }
 
 
