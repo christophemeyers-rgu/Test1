@@ -6,6 +6,7 @@ header{
     max-width: 960px;
     margin-right: auto;
     margin-left: auto;
+    font-size: 250%;
 }
 
 main{
@@ -30,6 +31,9 @@ footer{
 }
 
 
+header.h3{
+    font-style: normal;
+}
 
 ul{
     list-style-type: none;
