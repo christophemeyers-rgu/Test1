@@ -34,10 +34,14 @@ footer{
     text-align: justify;
 }
 
-
-h1,h3{
-    font-size: 170%;
+header p{
+    font-size: 150%;
 }
+
+#BoldTitle{
+    font-weight: bold;
+}
+
 
 ul{
     list-style-type: none;
