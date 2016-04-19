@@ -2,6 +2,23 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+header{
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+main{
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row-reverse;
+}
+
+
+
 ul{
     list-style-type: none;
 }
