@@ -24,8 +24,14 @@ footer{
     margin-left: auto;
     background-color: #363636;
     color: white;
-    text-align: center;
+    text-align: left;
 }
+
+#Sidebar{
+    max-width: 150px;
+}
+
+
 
 ul{
     list-style-type: none;
