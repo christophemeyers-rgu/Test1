@@ -40,6 +40,11 @@ header p{
 
 #BoldTitle{
     font-weight: bold;
+    padding: 0 0 0 0;
+}
+
+#NormalTitle{
+    padding: 0 0 0 0;
 }
 
 
