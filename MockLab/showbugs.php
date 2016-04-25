@@ -88,12 +88,12 @@
                 </p>
                 <p>
                     <?php
-                    echo $row["bugSummary"];
+                    echo $row["bugCategory"];
                     ?>
                 </p>
                 <p>
                     <?php
-                    echo $row["bugCategory"];
+                    echo $row["bugSummary"];
                     ?>
                 </p>
 
