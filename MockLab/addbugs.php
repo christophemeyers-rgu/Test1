@@ -6,6 +6,33 @@
  * Time: 09:52
  */
 
+
+if($_SERVER['REQUEST_METHOD']==='POST'){
+    $db = new MySQLi(
+        "ap-cdbr-azure-east-c.cloudapp.net",
+        "b7d9b3801e98ae",
+        "0857bdb8",
+        "MockDB"
+    );
+
+    $query = "INSERT INTO bugs (bugName, bugSummary, bugCategory)
+              VALUES(?,?,?) ";
+
+    $stmt = $db->prepare($query);
+
+    $stmt->bind_param("sss",$_POST['bugname'],$_POST['bugsummary'],$_POST['bugcategory']);
+    $stmt->execute() or die("Error: ".$query."<br>".$db->error);
+
+    header("Location: showbugs.php");
+}
+elseif($_SERVER['REQUEST_METHOD']==='GET'){
+
+}
+else{
+    header("Location: index.php");
+}
+
+
 ?>
 
 
@@ -59,7 +86,7 @@
     </section>
 
     <section class="grid-75 tablet-grid-66 mobile-grid-100" id="MainSection">
-        <form>
+        <form action="addbugs.php" method="POST">
             <table>
                 <tr>
                     <td>
