@@ -17,8 +17,7 @@
     $query = "SELECT *
             FROM bugs";
 
-    $result = $mysqli->query($query);
-
+    $result = $db->query($query);
 
 
 
