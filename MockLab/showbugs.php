@@ -40,6 +40,8 @@
 
     $result = $stmt->get_result();
 
+    $num_of_rows = $stmt->num_rows;
+
 
 ?>
 
@@ -94,9 +96,9 @@
 
     <section class="grid-75 tablet-grid-66 mobile-grid-100" id="MainSection">
         <?php
-        if(mysqli_num_rows($result)>1)
+        if($num_of_rows>1)
         {
-            while($row=mysqli_fetch_array($result))
+            while($row= $result->fetch_assoc())
             {
                 ?>
 
