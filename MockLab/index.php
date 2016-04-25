@@ -42,13 +42,13 @@
                 <a href="showbugs.php">All Bugs</a>
             </li>
             <li>
-                <a href="bugs.html">Android Bugs</a>
+                <a href="showbugs.php?category=Android">Android Bugs</a>
             </li>
             <li>
-                <a href="bugs.html">iOS Bugs</a>
+                <a href="showbugs.php?category=iOS">iOS Bugs</a>
             </li>
             <li>
-                <a href="bugs.html">Windows Bugs</a>
+                <a href="showbugs.php?category=Microsoft">Windows Bugs</a>
             </li>
             <li>
                 <a href="addbugs.php">Insert Bug</a>

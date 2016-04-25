@@ -14,10 +14,27 @@
     );
 
 
-    $query = "SELECT *
-            FROM bugs";
+    if(isset($_GET['category'])){
+        $query = "SELECT *
+                  FROM bugs
+                  WHERE bugCategory = ?";
 
-    $result = $db->query($query);
+        $stmt = $db->prepare($query);
+
+        $stmt->bind_param("s",$_GET['category']);
+
+    }
+    else{
+        $query = "SELECT *
+                  FROM bugs";
+
+        $stmt = $db->prepare($query);
+
+
+    }
+
+
+    $stmt->execute() or die("Error: ".$query."<br>".$db->error);
 
 
 
@@ -58,13 +75,13 @@
                 <a href="showbugs.php">All Bugs</a>
             </li>
             <li>
-                <a href="bugs.html">Android Bugs</a>
+                <a href="showbugs.php?category=Android">Android Bugs</a>
             </li>
             <li>
-                <a href="bugs.html">iOS Bugs</a>
+                <a href="showbugs.php?category=iOS">iOS Bugs</a>
             </li>
             <li>
-                <a href="bugs.html">Windows Bugs</a>
+                <a href="showbugs.php?category=Microsoft">Windows Bugs</a>
             </li>
             <li>
                 <a href="addbugs.php">Insert Bug</a>
@@ -75,9 +92,9 @@
 
     <section class="grid-75 tablet-grid-66 mobile-grid-100" id="MainSection">
         <?php
-        if(mysqli_num_rows($result)>1)
+        if(mysqli_num_rows($stmt)>1)
         {
-            while($row=mysqli_fetch_array($result))
+            while($row=mysqli_fetch_array($stmt))
             {
                 ?>
 
