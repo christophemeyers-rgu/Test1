@@ -36,7 +36,9 @@
 
     $stmt->execute() or die("Error: ".$query."<br>".$db->error);
 
+    $stmt->store_result();
 
+    $result = $stmt->get_result();
 
 
 ?>
@@ -92,9 +94,9 @@
 
     <section class="grid-75 tablet-grid-66 mobile-grid-100" id="MainSection">
         <?php
-        if(mysqli_num_rows($stmt)>1)
+        if(mysqli_num_rows($result)>1)
         {
-            while($row=mysqli_fetch_array($stmt))
+            while($row=mysqli_fetch_array($result))
             {
                 ?>
 
